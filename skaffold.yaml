@@ -5,8 +5,10 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
+  local:
+    push: false
   artifacts:
-    - image: tixsageregistry.azurecr.io/auth
+    - image: devmikun/auth
       context: auth
       docker:
         dockerfile: Dockerfile

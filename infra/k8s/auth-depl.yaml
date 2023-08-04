@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment 
+kind: Deployment
 metadata:
   name: auth-depl
 spec:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: tixsageregistry.azurecr.io/auth
+          image: devmikun/auth
 ---
 apiVersion: v1
 kind: Service
